@@ -5,19 +5,20 @@ account_info = (req, res) => {
 
     User.findOne({ username: req.params.username })
         .then(user => res.status(200).send(user))
+        .catch(error => res.status(400).json(error))
 };
 
 account_update = (req, res) => {
 
     User.findOneAndUpdate({ username : req.params.username }, req.body, { new : true})
-        .then(result => res.status(200).json(result))
+        .then(user => res.status(200).json(user))
         .catch(error => res.status(400).json(error));
 };
 
 account_delete = (req, res) => {
 
     User.findOneAndRemove({ username : req.params.username })
-        .then(result => res.status(200).json(result))
+        .then(user => res.status(200).json(user))
         .catch(error => res.status(400).json(error))
 };
 

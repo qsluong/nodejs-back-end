@@ -5,6 +5,7 @@ var bcrypt = require('bcrypt'),
     User = require('../../models/user');
 
 login = (req, res) => {
+    console.log(req.body)
     let user;
     User.findOne({ username: req.body.username })
         .then((found) => {
@@ -55,12 +56,15 @@ register = (req, res) => {
 };
 
 tokenVerification = (req, res, next) => {
-    let token = req.headers.authorization;
 
-    if (token) {
-        next();
-    } else {
+    if (!req.headers.authorization) {
         res.status(401).json('Please provide a token')
+    } else {
+        var token = req.headers.authorization.split(' ')[1];
+        jwt.verify(token, config.env.dbSecret, (err) => {
+            if (err) res.status(400).json(err);
+            else next();
+        });
     }
 };
 
