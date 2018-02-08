@@ -1,8 +1,45 @@
-var express = require('express');
-var app = express();
+var express = require('express'),
+    app = express(),
+    bodyParser = require('body-parser'),
+    config = require('./config/environment');
 
-app.get('/', (req, res) => res.send('Hello World'));
+// Controllers
+var authenticationController = require('./controllers/authentication.controller'),
+    accountController = require('./controllers/account.controller')
 
-app.listen(3000, () => console.log('The magic happens at port 3000'));
+app.use(bodyParser.urlencoded({
+    'extended':'true'
+}));
+app.use(bodyParser.json());
+app.use(bodyParser.json({
+    type:'application/vnd.api+json'
+}));
+
+app.set('port', (process.env.PORT || config.env.webPort));
+app.set('env', (process.env.ENV || 'development'));
+
+// CORS headers
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+    res.setHeader('Access-Control-Allow-Credentials', true);
+    next();
+});
+
+app.use('', authenticationController);
+app.use('/account', accountController);
+
+app.use('*', (req, res) => {
+    res.status(400);
+    res.json({
+        'Error' : 'This URL does not exist'
+    });
+});
+
+app.listen(config.env.webPort, () => {
+    console.log('Server listens at port: ' + app.get('port'));
+    console.log('http://' + config.env.dbHost + '/' + config.env.webPort);
+});
 
 module.exports = app;
