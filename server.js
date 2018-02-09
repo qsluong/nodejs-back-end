@@ -4,7 +4,8 @@ var express = require('express'),
     config = require('./config/environment');
 
 var authenticationController = require('./controllers/authentication.controller'),
-    accountController = require('./controllers/account.controller');
+    accountController = require('./controllers/account.controller'),
+    collectionController = require('./controllers/collection.controller');
 
 app.use(bodyParser.json());
 
@@ -22,6 +23,7 @@ app.use((req, res, next) => {
 
 app.use('', authenticationController);
 app.use('/account', accountController);
+app.use('/collection', collectionController);
 
 app.use('*', (req, res) => {
     res.status(400);
