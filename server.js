@@ -5,7 +5,8 @@ var express = require('express'),
 
 var authenticationController = require('./controllers/authentication.controller'),
     accountController = require('./controllers/account.controller'),
-    collectionController = require('./controllers/collection.controller');
+    collectionController = require('./controllers/collection.controller'),
+    cardController = require('./controllers/card.controller');
 
 app.use(bodyParser.json());
 
@@ -24,6 +25,7 @@ app.use((req, res, next) => {
 app.use('', authenticationController);
 app.use('/account', accountController);
 app.use('/collection', collectionController);
+app.use('/card', cardController);
 
 app.use('*', (req, res) => {
     res.status(400);
