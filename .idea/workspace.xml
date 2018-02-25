@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c71df1dd-9943-426b-97ff-78c2df5426e0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/api/v1/card.route.v1.js" afterPath="$PROJECT_DIR$/api/v1/card.route.v1.js" />
-      <change beforePath="$PROJECT_DIR$/controllers/card.controller.js" afterPath="$PROJECT_DIR$/controllers/card.controller.js" />
+      <change beforePath="$PROJECT_DIR$/api/v1/collection.route.v1.js" afterPath="$PROJECT_DIR$/api/v1/collection.route.v1.js" />
+      <change beforePath="$PROJECT_DIR$/controllers/collection.controller.js" afterPath="$PROJECT_DIR$/controllers/collection.controller.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,71 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="card.route.v1.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/v1/card.route.v1.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="card.controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/card.controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collection.controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/collection.controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collection.route.v1.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="collection.route.v1.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/v1/collection.route.v1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="authentication.route.v1.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/v1/authentication.route.v1.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="61" column="60" lean-forward="false" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="neo4j.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/databases/neo4j.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="77" lean-forward="false" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -120,13 +60,13 @@
         <option value="$PROJECT_DIR$/controllers/account.controller.js" />
         <option value="$PROJECT_DIR$/api/v1/account.route.v1.js" />
         <option value="$PROJECT_DIR$/models/collection.js" />
-        <option value="$PROJECT_DIR$/controllers/collection.controller.js" />
-        <option value="$PROJECT_DIR$/api/v1/collection.route.v1.js" />
         <option value="$PROJECT_DIR$/api/v1/authentication.route.v1.js" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/databases/neo4j.js" />
         <option value="$PROJECT_DIR$/controllers/card.controller.js" />
         <option value="$PROJECT_DIR$/api/v1/card.route.v1.js" />
+        <option value="$PROJECT_DIR$/controllers/collection.controller.js" />
+        <option value="$PROJECT_DIR$/api/v1/collection.route.v1.js" />
       </list>
     </option>
   </component>
@@ -147,8 +87,8 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="9" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="4" />
     <option name="y" value="42" />
     <option name="width" value="1184" />
     <option name="height" value="686" />
@@ -273,15 +213,16 @@
       <workItem from="1519231391576" duration="810000" />
       <workItem from="1519237577766" duration="1248000" />
       <workItem from="1519406152620" duration="6714000" />
-      <workItem from="1519429391398" duration="3227000" />
+      <workItem from="1519429391398" duration="3524000" />
+      <workItem from="1519559830709" duration="2266000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44088000" />
+    <option name="totallyTimeSpent" value="46651000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="42" width="1184" height="686" extended-state="0" />
+    <frame x="4" y="42" width="1184" height="686" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19256757" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -636,17 +577,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
+    <entry file="file://$PROJECT_DIR$/controllers/card.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        <state relative-caret-position="135">
+          <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/v1/card.route.v1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/v1/authentication.route.v1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
+        <state relative-caret-position="534">
           <caret line="61" column="60" lean-forward="false" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
           <folding />
         </state>
@@ -660,34 +609,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/collection.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="165">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/v1/collection.route.v1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/card.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/v1/card.route.v1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
