@@ -52,7 +52,7 @@ card_create = (req, res) => {
                 title: record.get('c').properties.title,
                 definition: record.get('c').properties.definition,
                 transliteration: record.get('c').properties.transliteration
-            }
+            };
             response = card;
         });
         console.log(response);
@@ -60,7 +60,52 @@ card_create = (req, res) => {
     })
 };
 
+card_update = (req, res) => {
+
+    let response;
+
+    session.run(
+        'MATCH (c:Card) ' +
+        'WHERE ID(c) = $id ' +
+        'SET c.title = $title, c.definition = $definition, c.transliteration = $transliteration ' +
+        'RETURN c',
+        {
+            id: req.body._id,
+            title: req.body.title,
+            definition: req.body.definition,
+            transliteration: req.body.transliteration
+        }
+    ).then(result => {
+        console.log(result.records);
+        result.records.forEach(record => {
+            console.log(record);
+        });
+        res.status(200).json(result.records);
+    })
+
+};
+
+card_delete = (req, res) => {
+
+    let id = Number(req.params.id);
+
+    session.run(
+        'MATCH (c:Card) ' +
+        'WHERE ID(c) = $id ' +
+        'DETACH DELETE c ',
+        {
+            id: id
+        }
+    ).then(result => {
+        console.log(result);
+        res.status(200).json(result);
+    })
+
+};
+
 module.exports = {
     card_list,
-    card_create
+    card_create,
+    card_update,
+    card_delete
 };
